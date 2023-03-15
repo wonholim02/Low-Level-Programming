@@ -31,7 +31,7 @@ orig x3000
 
 	BRp WHILE 
 	HALT
-
+ 
 A 		.fill x3200		
 B 		.fill x3300		
 C 		.fill x3400		
