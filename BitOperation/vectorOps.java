@@ -1,4 +1,4 @@
-public class Examples {
+public class vectorOps {
     int bitVector;
     
     public void clearBitFourOfBitVector() {
