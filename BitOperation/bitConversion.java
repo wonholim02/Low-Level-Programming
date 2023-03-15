@@ -1,4 +1,4 @@
-public class Bases
+public class bitConversion
 {
     public static int binaryStringToInt(String binary) {
         int stack = 0;
