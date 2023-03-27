@@ -1,14 +1,3 @@
-;;  MULTIPLY Pseudocode (see PDF for explanation and examples)   
-;;  
-;;  MULTIPLY(int a, int b) {
-;;      int ret = 0;
-;;      while (b > 0) {
-;;          ret += a;
-;;          b--;
-;;      }
-;;      return ret;
-;;  }
-
 MULTIPLY 
     ADD R6, R6, -4	;;saving
     STR R7, R6, 2 	
@@ -51,16 +40,6 @@ LDR R5, R6, 1
 LDR R7, R6, 2
 ADD R6, R6, 3
 RET
-
-;;  FACTORIAL Pseudocode (see PDF for explanation and examples)
-;;
-;;  FACTORIAL(int n) {
-;;      int ret = 1;
-;;      for (int x = 2; x <= n; x++) {
-;;          ret = MULTIPLY(ret, x);
-;;      }
-;;      return ret;
-;;  }
 
 FACTORIAL 
     ADD R6, R6, -4	;;saving
@@ -109,7 +88,6 @@ FACTORIAL
     LDR R5, R6, 1
     LDR R7, R6, 2
     ADD R6, R6, 3
-
     RET
     
 STACK .fill xF000
