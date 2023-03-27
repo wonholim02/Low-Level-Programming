@@ -1,26 +1,6 @@
 .orig x3000
     HALT
-
-;;  INSERTION_SORT **RESURSIVE** Pseudocode (see PDF for explanation and examples)
-;; 
-;;  INSERTION_SORT(int[] arr (addr), int length) {
-;;      if (length <= 1) {
-;;        return; 
-;;      }
-;;  
-;;      INSERTION_SORT(arr, length - 1);
-;;  
-;;      int last_element = arr[length - 1];
-;;      int n = length - 2;
-;;  
-;;      while (n >= 0 && arr[n] > last_element) {
-;;          arr[n + 1] = arr[n];
-;;          n--;
-;;      }
-;;  
-;;      arr[n + 1] = last_element;
-;;  }
-
+    
 INSERTION_SORT 
     ADD R6, R6, #-4 ; saving
     STR R7, R6, #2 ; 
