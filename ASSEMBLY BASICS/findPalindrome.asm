@@ -1,6 +1,7 @@
 .orig x3000
 
 AND R0, R0, #0 ; R0 = len
+
 WHILE1 
 	LD R7, STRING ; R7 = x4004
 	ADD R2, R0, R7 ; R2 = address[len]
@@ -12,6 +13,7 @@ ENDWHILE1
 
 ADD R3, R0, #-1 ; R3 = right = (len - 1)
 AND R2, R2, #0 ; R2 = left = 0
+
 WHILE2
 	AND R1, R1, #0 ;
 	ADD R1, R1, #1 ; R1 = isPalindrome = 1
@@ -44,17 +46,14 @@ WHILE2
 ENDWHILE2
  
 STI R1, ANSWERADDR
-	
 HALT
 
 STRING	.fill x4004
 ANSWERADDR 	.fill x5005
 .end
-
 .orig x4004				   
 	.stringz "abcdefghi" 
 .end
-
 .orig x5005
 	ANSWER  .blkw 1
 .end
