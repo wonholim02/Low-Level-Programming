@@ -37,19 +37,16 @@ B 		.fill x3300
 C 		.fill x3400		
 LENGTH 	.fill 3	
 .end
-
 .orig x3200
 	.fill -2
 	.fill 2
 	.fill 1
 .end
-
 .orig x3300			
 	.fill 1
 	.fill 0
 	.fill 3
 .end
-
 .orig x3400
 	.blkw 3	
 .end
