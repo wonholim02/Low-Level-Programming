@@ -1,5 +1,5 @@
 MULTIPLY 
-    ADD R6, R6, -4	;;saving
+    ADD R6, R6, -4
     STR R7, R6, 2 	
     STR R5, R6, 1 	
     ADD R5, R6, 0	
@@ -17,13 +17,13 @@ MULTIPLY
     AND R3, R3, 0 ; R3 = ret
 
     FORSTART
-    AND R2, R2, 0 ; clear
+    AND R2, R2, 0
     FORLOOP
     NOT R4, R2
-    ADD R4, R4, 1	; increment
+    ADD R4, R4, 1
     ADD R4, R4, R1	
     BRnz TEARDOWNMUL
-    ADD R2, R2, 1	; increment
+    ADD R2, R2, 1
     ADD R3, R3, R0	
     BR FORLOOP
 
@@ -42,7 +42,7 @@ ADD R6, R6, 3
 RET
 
 FACTORIAL 
-    ADD R6, R6, -4	;;saving
+    ADD R6, R6, -4
     STR R7, R6, 2 	
     STR R5, R6, 1 	
     ADD R5, R6, 0
@@ -53,30 +53,30 @@ FACTORIAL
     STR R3, R5, -4
     STR R4, R5, -5
 
-    LDR R0, R5, 4	;; R0 = n
-    AND R1, R1, 0	; clear
-    ADD R1, R1, 1	;; R1 = ret
+    LDR R0, R5, 4
+    AND R1, R1, 0
+    ADD R1, R1, 1
     FORSTART2
-    AND R2, R2, 0 ; clear
-    ADD R2, R2, 2	; set R2 = 2
+    AND R2, R2, 0
+    ADD R2, R2, 2
     FORLOOP2
     NOT R3, R2
-    ADD R3, R3, 1	; incrment
+    ADD R3, R3, 1
     ADD R3, R3, R0	
     BRn ENDFOR
 
-    ADD R6, R6, -2 ; for starting point 
-    STR R1, R6, 0 ;arg
-    STR R2, R6, 1 ;arg
+    ADD R6, R6, -2
+    STR R1, R6, 0
+    STR R2, R6, 1
     JSR MULTIPLY
-    LDR R1, R6, 0 ; get return value
+    LDR R1, R6, 0
     ADD R6, R6, 3
 
-    ADD R2, R2, 1	; i++
+    ADD R2, R2, 1
     BR FORLOOP2
     ENDFOR
 
-    STR R1, R5, 3	; store return val
+    STR R1, R5, 3
 
     LDR R0, R5, 0 	
     LDR R4, R5, -5
