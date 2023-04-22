@@ -3,7 +3,7 @@
   "clockSpeed": 1,
   "circuits": [
     {
-      "name": "Datapath",
+      "name": "datapath",
       "components": [
         {
           "name": "com.ra4king.circuitsim.gui.peers.wiring.SplitterPeer",
