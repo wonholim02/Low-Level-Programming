@@ -1,4 +1,4 @@
-public class simpleOps
+public class basicBitOps
 {
     int getShort(int num, int which) {
         return (num >> (which << 4)) & 0xFFFF;
