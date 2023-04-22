@@ -2,7 +2,7 @@
   "globalBitSize": 1,
   "clockSpeed": 1,
   "circuits": [
-    {
+    { 
       "name": "1-Bit Adder",
       "components": [
         {
