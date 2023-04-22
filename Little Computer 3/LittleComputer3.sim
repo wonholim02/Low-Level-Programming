@@ -1,10 +1,9 @@
 {
-  "version": "1.8.2 2110 version",
   "globalBitSize": 1,
   "clockSpeed": 64,
   "circuits": [
     {
-      "name": "LC-3",
+      "name": "LittleComputer-3",
       "components": [
         {
           "name": "com.ra4king.circuitsim.gui.peers.plexers.MultiplexerPeer",
