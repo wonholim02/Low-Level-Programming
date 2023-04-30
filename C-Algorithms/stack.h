@@ -1,7 +1,3 @@
-/**
- * \mainpage Timed Lab 4: C and Dynamic Memory Allocation
- */
-
 #ifndef STACK_H
 #define STACK_H
 
