@@ -100,6 +100,7 @@ int reset(void) {
     }
     // reset the field, free stack_arr
     numPosts = 0;
+    
     free(stack_arr);
     return SUCCESS;
 }
